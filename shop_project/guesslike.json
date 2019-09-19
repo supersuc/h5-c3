@@ -1,0 +1,62 @@
+{
+  "data": [
+        {
+          "id": 1,
+          "good_img": "img/good.jpg",
+          "name": "分布式无线路由器",
+          "new_price": 2387,
+          "saleNum": 2949
+        },
+        {
+          "id": 2,
+          "good_img": "img/erji.jpg",
+          "name": "分布式无线路由器",
+          "new_price": 234,
+          "saleNum": 234
+        },
+        {
+          "id": 3,
+          "good_img": "img/sanxing.jpg",
+          "name": "分布式无线路由器",
+          "new_price": 3434,
+          "saleNum": 348
+        },
+        {
+          "id": 4,
+          "good_img": "img/kongtiao.jpg",
+          "name": "分布式无线路由器",
+          "new_price": 21349,
+          "saleNum": 343
+        },
+        {
+          "id": 5,
+          "good_img": "img/good.jpg",
+          "name": "分布式无线路由器",
+          "new_price": 43,
+          "saleNum": 434
+        },
+        {
+          "id": 6,
+          "good_img": "img/good.jpg",
+          "name": "分布式无线路由器",
+          "new_price": 43,
+          "saleNum": 434
+        },
+        {
+          "id": 7,
+          "good_img": "img/good.jpg",
+          "name": "分布式无线路由器",
+          "new_price": 43,
+          "saleNum": 434
+        },
+        {
+          "id": 8,
+          "good_img": "img/sorry.jpg",
+          "name": "到底啦!",
+          "new_price":"",
+          "saleNum": ""
+        }
+      ],
+  "code": 0,
+  "msg": "成功"
+}

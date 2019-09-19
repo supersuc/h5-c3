@@ -1,0 +1,1520 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+  <title>MQsupermarket</title>
+  <meta name="description" content="网上购物商城">
+  <meta name="keywords" content="网上购物，网上商城，家电，手机，电脑，服装">
+  <link rel="shortcut icon" href="img/logo.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/iconfont.css">
+  <link rel="stylesheet" href="css/index.css">
+
+<body>
+  <div class="top-nav">
+    <div class="w clearfix">
+      <div class="login">
+        <a href="#" class="h">您好，请登录</a>
+        <a href="#">免费注册</a>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <a href="#" class="link">我的订单</a>
+        </li>
+        <li>
+          <a href="#" class="link">购物车</a>
+        </li>
+        <li>
+          <a href="#" class="link">收藏夹</a>
+        </li>
+        <li>
+          <a href="#" class="link">联系客服</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="searchWrap">
+    <div class="w">
+      <a href="#" class="logo">MQsupermarket</a>
+      <div class="search-box clearfix">
+        <input class="searchInput" type="text" id="searchInput" placeholder="请输入商品名称">
+        <button class="search-btn">搜索</button>
+        <ul id="search-suggest" class="search-suggest">
+          <!-- <li>html5</li>
+            <li>css3</li>
+            <li>js</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="w menu clearfix">
+    <div class="aside-nav">
+      <ul class="nav-list">
+        <li class="list-item">
+          <a href="#" class="item-href"><span class="iconfont icon-leijiayongdianqix"></span>家用电器</a>
+          <div class="item-menu">
+            <div class="subcate">
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">电视<i class="iconfont subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">超薄电视</a>
+                  <a href="#" class="subcate_con_lk">全面屏电视</a>
+                  <a href="#" class="subcate_con_lk">智能电视</a>
+                  <a href="#" class="subcate_con_lk">OLED电视</a>
+                  <a href="#" class="subcate_con_lk">曲面电视</a>
+                  <a href="#" class="subcate_con_lk">4K超清电视</a>
+                  <a href="#" class="subcate_con_lk">55英寸</a>
+                  <a href="#" class="subcate_con_lk">65英寸</a>
+                  <a href="#" class="subcate_con_lk">电视配件</a></dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">空调<i class="iconfont subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">空调挂机</a>
+                  <a href="#" class="subcate_con_lk">空调柜机</a>
+                  <a href="#" class="subcate_con_lk">精选推荐</a>
+                  <a href="#" class="subcate_con_lk">中央空调</a>
+                  <a href="#" class="subcate_con_lk">移动空调</a>
+                  <a href="#" class="subcate_con_lk">省电空调</a>
+                  <a href="#" class="subcate_con_lk">变频空调</a>
+                  <a href="#" class="subcate_con_lk">以旧换新</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">洗衣机<i class="iconfont subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">滚筒洗衣机</a>
+                  <a href="#" class="subcate_con_lk">洗烘一体机</a>
+                  <a href="#" class="subcate_con_lk">波轮洗衣机</a>
+                  <a href="#" class="subcate_con_lk">迷你洗衣机</a>
+                  <a href="#" class="subcate_con_lk">烘干机</a>
+                  <a href="#" class="subcate_con_lk">洗衣机配件</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">冰箱<i class="iconfont subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">多门</a>
+                  <a href="#" class="subcate_con_lk">对开门</a>
+                  <a href="#" class="subcate_con_lk">三门</a>
+                  <a href="#" class="subcate_con_lk">双门</a>
+                  <a href="#" class="subcate_con_lk">冷柜/冰吧</a>
+                  <a href="#" class="subcate_con_lk">酒柜</a>
+                  <a href="#" class="subcate_con_lk">冰箱配件</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">厨卫大电<i class="iconfont subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">油烟机</a>
+                  <a href="#" class="subcate_con_lk">燃气灶</a>
+                  <a href="#" class="subcate_con_lk">烟灶套装</a>
+                  <a href="#" class="subcate_con_lk">集成灶</a>
+                  <a href="#" class="subcate_con_lk">消毒柜</a>
+                  <a href="#" class="subcate_con_lk">洗碗机</a>
+                  <a href="#" class="subcate_con_lk">电热水器</a>
+                  <a href="#" class="subcate_con_lk">燃气热水器</a>
+                  <a href="#" class="subcate_con_lk">空气能热水器</a>
+                  <a href="#" class="subcate_con_lk">太阳能热水器</a>
+                  <a href="#" class="subcate_con_lk">嵌入式厨电</a>
+                  <a href="#" class="subcate_con_lk">烟机灶具配件</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">厨房小电<i class="iconfont subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">破壁机</a>
+                  <a href="#" class="subcate_con_lk">电烤箱</a>
+                  <a href="#" class="subcate_con_lk">电饭煲</a>
+                  <a href="#" class="subcate_con_lk">电压力锅</a>
+                  <a href="#" class="subcate_con_lk">电炖锅</a>
+                  <a href="#" class="subcate_con_lk">豆浆机</a>
+                  <a href="#" class="subcate_con_lk">料理机</a>
+                  <a href="#" class="subcate_con_lk">咖啡机</a>
+                  <a href="#" class="subcate_con_lk">电饼铛</a>
+                  <a href="#" class="subcate_con_lk">榨汁机/原汁机</a>
+                  <a href="#" class="subcate_con_lk">电水壶/热水瓶</a>
+                  <a href="#" class="subcate_con_lk">微波炉</a>
+                  <a href="#" class="subcate_con_lk">多用途锅</a>
+                  <a href="#" class="subcate_con_lk">养生壶</a>
+                  <a href="#" class="subcate_con_lk">电磁炉</a>
+                  <a href="#" class="subcate_con_lk">面包机</a>
+                  <a href="#" class="subcate_con_lk">空气炸锅</a>
+                  <a href="#" class="subcate_con_lk">面条机</a>
+                  <a href="#" class="subcate_con_lk">电陶炉</a>
+                  <a href="#" class="subcate_con_lk">煮蛋器</a>
+                  <a href="#" class="subcate_con_lk">电烧烤炉</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">厨卫大电<i class="iconfont subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">油烟机</a>
+                  <a href="#" class="subcate_con_lk">燃气灶</a>
+                  <a href="#" class="subcate_con_lk">烟灶套装</a>
+                  <a href="#" class="subcate_con_lk">集成灶</a>
+                  <a href="#" class="subcate_con_lk">消毒柜</a>
+                  <a href="#" class="subcate_con_lk">洗碗机</a>
+                  <a href="#" class="subcate_con_lk">电热水器</a>
+                  <a href="#" class="subcate_con_lk">燃气热水器</a>
+                  <a href="#" class="subcate_con_lk">空气能热水器</a>
+                  <a href="#" class="subcate_con_lk">太阳能热水器</a>
+                  <a href="#" class="subcate_con_lk">嵌入式厨电</a>
+                  <a href="#" class="subcate_con_lk">烟机灶具配件</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="guessLike">
+              <h3>猜你喜欢</h3>
+              <ul class="like_list clearfix">
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="#" class="item-href"><span class="iconfont icon-shouji"></span>手机数码</a>
+          <div class="item-menu">
+            <div class="subcate">
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">手机通讯<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">手机</a>
+                  <a href="#" class="subcate_con_lk">游戏手机</a>
+                  <a href="#" class="subcate_con_lk">老人机</a>
+                  <a href="#" class="subcate_con_lk">对讲机</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">手机配件<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">手机壳</a>
+                  <a href="#" class="subcate_con_lk">贴膜</a>
+                  <a href="#" class="subcate_con_lk">手机储存卡</a>
+                  <a href="#" class="subcate_con_lk">数据线</a>
+                  <a href="#" class="subcate_con_lk">充电器</a>
+                  <a href="#" class="subcate_con_lk">手机耳机</a>
+                  <a href="#" class="subcate_con_lk">创意配件</a>
+                  <a href="#" class="subcate_con_lk">手机电池</a>
+                  <a href="#" class="subcate_con_lk">移动电源</a>
+                  <a href="#" class="subcate_con_lk">蓝牙耳机</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">摄影摄像<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">数码相机</a>
+                  <a href="#" class="subcate_con_lk">微单相机</a>
+                  <a href="#" class="subcate_con_lk">单反相机</a>
+                  <a href="#" class="subcate_con_lk">拍立得</a>
+                  <a href="#" class="subcate_con_lk">运动相机</a>
+                  <a href="#" class="subcate_con_lk">摄像机</a>
+                  <a href="#" class="subcate_con_lk">镜头</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">数码配件<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">储存卡</a>
+                  <a href="#" class="subcate_con_lk">三脚架</a>
+                  <a href="#" class="subcate_con_lk">相机包</a>
+                  <a href="#" class="subcate_con_lk">滤镜</a>
+                  <a href="#" class="subcate_con_lk">闪光灯</a>
+                  <a href="#" class="subcate_con_lk">读卡器</a>
+                  <a href="#" class="subcate_con_lk">电池/充电器</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">影音娱乐<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">耳机耳麦</a>
+                  <a href="#" class="subcate_con_lk">音箱音响</a>
+                  <a href="#" class="subcate_con_lk">智能音响</a>
+                  <a href="#" class="subcate_con_lk">收音机</a>
+                  <a href="#" class="subcate_con_lk">麦克风</a>
+                  <a href="#" class="subcate_con_lk">智能手环</a>
+                  <a href="#" class="subcate_con_lk">无人机</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="guessLike">
+              <h3>猜你喜欢</h3>
+              <ul class="like_list clearfix">
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="#" class="item-href"><span class="iconfont icon-diannao"></span>电脑办公</a>
+          <div class="item-menu">
+            <div class="subcate">
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">电脑整机<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">笔记本</a>
+                  <a href="#" class="subcate_con_lk">游戏本</a>
+                  <a href="#" class="subcate_con_lk">平板电脑</a>
+                  <a href="#" class="subcate_con_lk">平板电脑配件</a>
+                  <a href="#" class="subcate_con_lk">台式机</a>
+                  <a href="#" class="subcate_con_lk">一体机</a>
+                  <a href="#" class="subcate_con_lk">笔记本配件</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">电脑配件<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">显示器</a>
+                  <a href="#" class="subcate_con_lk">CPU</a>
+                  <a href="#" class="subcate_con_lk">主板</a>
+                  <a href="#" class="subcate_con_lk">显卡</a>
+                  <a href="#" class="subcate_con_lk">硬盘</a>
+                  <a href="#" class="subcate_con_lk">内存</a>
+                  <a href="#" class="subcate_con_lk">机箱</a>
+                  <a href="#" class="subcate_con_lk">电源</a>
+                  <a href="#" class="subcate_con_lk">散热器</a>
+                  <a href="#" class="subcate_con_lk">显示器支架</a>
+                  <a href="#" class="subcate_con_lk">声卡</a>
+                  <a href="#" class="subcate_con_lk">组装电脑</a>
+                  <a href="#" class="subcate_con_lk">SSD固态硬盘</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">外设产品<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">鼠标</a>
+                  <a href="#" class="subcate_con_lk">键盘</a>
+                  <a href="#" class="subcate_con_lk">键鼠套装</a>
+                  <a href="#" class="subcate_con_lk">U盘</a>
+                  <a href="#" class="subcate_con_lk">移动硬盘</a>
+                  <a href="#" class="subcate_con_lk">鼠标垫</a>
+                  <a href="#" class="subcate_con_lk">摄像头</a>
+                  <a href="#" class="subcate_con_lk">手写板</a>
+                  <a href="#" class="subcate_con_lk">电脑工具</a>
+                  <a href="#" class="subcate_con_lk">电脑清洁</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">游戏设备<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">游戏机</a>
+                  <a href="#" class="subcate_con_lk">游戏耳机</a>
+                  <a href="#" class="subcate_con_lk">手柄</a>
+                  <a href="#" class="subcate_con_lk">游戏软件</a>
+                  <a href="#" class="subcate_con_lk">游戏周边</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">办公设备<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">摄影机</a>
+                  <a href="#" class="subcate_con_lk">摄影配件</a>
+                  <a href="#" class="subcate_con_lk">多功能一体机</a>
+                  <a href="#" class="subcate_con_lk">打印机</a>
+                  <a href="#" class="subcate_con_lk">传真设备</a>
+                  <a href="#" class="subcate_con_lk">验钞机</a>
+                  <a href="#" class="subcate_con_lk">扫描设备</a>
+                  <a href="#" class="subcate_con_lk">复合机</a>
+                  <a href="#" class="subcate_con_lk">碎纸机</a>
+                  <a href="#" class="subcate_con_lk">考勤门禁</a>
+                  <a href="#" class="subcate_con_lk">收银机</a>
+                  <a href="#" class="subcate_con_lk">保险柜</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="guessLike">
+              <h3>猜你喜欢</h3>
+              <ul class="like_list clearfix">
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="#" class="item-href"><span class="iconfont icon-jiaju"></span>家具厨具</a>
+          <div class="item-menu">
+            <div class="subcate">
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">家纺<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">四件套</a>
+                  <a href="#" class="subcate_con_lk">被子</a>
+                  <a href="#" class="subcate_con_lk">枕芯</a>
+                  <a href="#" class="subcate_con_lk">毛巾浴巾</a>
+                  <a href="#" class="subcate_con_lk">蚊帐</a>
+                  <a href="#" class="subcate_con_lk">凉席</a>
+                  <a href="#" class="subcate_con_lk">地毯地垫</a>
+                  <a href="#" class="subcate_con_lk">抱枕靠垫</a>
+                  <a href="#" class="subcate_con_lk">被套</a>
+                  <a href="#" class="subcate_con_lk">坐垫</a>
+                  <a href="#" class="subcate_con_lk">沙发垫套</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">家具<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">电脑桌</a>
+                  <a href="#" class="subcate_con_lk">电视柜</a>
+                  <a href="#" class="subcate_con_lk">主茶几板</a>
+                  <a href="#" class="subcate_con_lk">办公柜</a>
+                  <a href="#" class="subcate_con_lk">进口</a>
+                  <a href="#" class="subcate_con_lk">沙发</a>
+                  <a href="#" class="subcate_con_lk">床</a>
+                  <a href="#" class="subcate_con_lk">床垫</a>
+                  <a href="#" class="subcate_con_lk">餐桌</a>
+                  <a href="#" class="subcate_con_lk">衣柜</a>
+                  <a href="#" class="subcate_con_lk">书架</a>
+                  <a href="#" class="subcate_con_lk">鞋柜</a>
+                  <a href="#" class="subcate_con_lk">电脑椅</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">厨具<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">水具酒具</a>
+                  <a href="#" class="subcate_con_lk">炒锅</a>
+                  <a href="#" class="subcate_con_lk">碗碟套装</a>
+                  <a href="#" class="subcate_con_lk">厨房配件</a>
+                  <a href="#" class="subcate_con_lk">刀剪菜板</a>
+                  <a href="#" class="subcate_con_lk">锅具套装</a>
+                  <a href="#" class="subcate_con_lk">茶具</a>
+                  <a href="#" class="subcate_con_lk">咖啡具</a>
+                  <a href="#" class="subcate_con_lk">保温杯</a>
+                  <a href="#" class="subcate_con_lk">烹饪锅具</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">灯具<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">吊灯</a>
+                  <a href="#" class="subcate_con_lk">台灯</a>
+                  <a href="#" class="subcate_con_lk">装饰灯</a>
+                  <a href="#" class="subcate_con_lk">LED灯</a>
+                  <a href="#" class="subcate_con_lk">落地灯</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">厨房卫浴<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">水槽</a>
+                  <a href="#" class="subcate_con_lk">龙头</a>
+                  <a href="#" class="subcate_con_lk">淋浴花洒</a>
+                  <a href="#" class="subcate_con_lk">马桶</a>
+                  <a href="#" class="subcate_con_lk">厨卫挂件</a>
+                  <a href="#" class="subcate_con_lk">浴室柜</a>
+                  <a href="#" class="subcate_con_lk">浴霸</a>
+                  <a href="#" class="subcate_con_lk">垃圾处理器</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="guessLike">
+              <h3>猜你喜欢</h3>
+              <ul class="like_list clearfix">
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="#" class="item-href"><span class="iconfont icon-fuzhuang-tixue"></span>男装女装</a>
+          <div class="item-menu">
+            <div class="subcate">
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">女装<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">连衣裙</a>
+                  <a href="#" class="subcate_con_lk">套装裙</a>
+                  <a href="#" class="subcate_con_lk">半身裙</a>
+                  <a href="#" class="subcate_con_lk">T恤</a>
+                  <a href="#" class="subcate_con_lk">衬衫</a>
+                  <a href="#" class="subcate_con_lk">卫衣</a>
+                  <a href="#" class="subcate_con_lk">西装</a>
+                  <a href="#" class="subcate_con_lk">风衣</a>
+                  <a href="#" class="subcate_con_lk">休闲裤</a>
+                  <a href="#" class="subcate_con_lk">牛仔裤</a>
+                  <a href="#" class="subcate_con_lk">短裤</a>
+                  <a href="#" class="subcate_con_lk">毛衣</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">男装<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">T恤</a>
+                  <a href="#" class="subcate_con_lk">牛仔裤</a>
+                  <a href="#" class="subcate_con_lk">休闲裤</a>
+                  <a href="#" class="subcate_con_lk">衬衫</a>
+                  <a href="#" class="subcate_con_lk">短裤</a>
+                  <a href="#" class="subcate_con_lk">POLO衫</a>
+                  <a href="#" class="subcate_con_lk">羽绒服</a>
+                  <a href="#" class="subcate_con_lk">夹克</a>
+                  <a href="#" class="subcate_con_lk">卫衣</a>
+                  <a href="#" class="subcate_con_lk">风衣</a>
+                  <a href="#" class="subcate_con_lk">毛衣</a>
+                  <a href="#" class="subcate_con_lk">羊毛衫</a>
+                  <a href="#" class="subcate_con_lk">西服</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">内衣<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">文胸</a>
+                  <a href="#" class="subcate_con_lk">睡衣</a>
+                  <a href="#" class="subcate_con_lk">男士内裤</a>
+                  <a href="#" class="subcate_con_lk">女士内裤</a>
+                  <a href="#" class="subcate_con_lk">休闲棉袜</a>
+                  <a href="#" class="subcate_con_lk">打底裤袜</a>
+                  <a href="#" class="subcate_con_lk">泳衣</a>
+                  <a href="#" class="subcate_con_lk">秋衣秋裤</a>
+                  <a href="#" class="subcate_con_lk">背心</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">配饰<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">太阳镜</a>
+                  <a href="#" class="subcate_con_lk">棒球帽</a>
+                  <a href="#" class="subcate_con_lk">围巾</a>
+                  <a href="#" class="subcate_con_lk">真皮手套</a>
+                  <a href="#" class="subcate_con_lk">口罩</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">童装<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">卫衣</a>
+                  <a href="#" class="subcate_con_lk">裤子</a>
+                  <a href="#" class="subcate_con_lk">外套</a>
+                  <a href="#" class="subcate_con_lk">衬衫</a>
+                  <a href="#" class="subcate_con_lk">裙子</a>
+                  <a href="#" class="subcate_con_lk">棉服</a>
+                  <a href="#" class="subcate_con_lk">马甲</a>
+                  <a href="#" class="subcate_con_lk">袜子</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="guessLike">
+              <h3>猜你喜欢</h3>
+              <ul class="like_list clearfix">
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="#" class="item-href"><span class="iconfont icon-qingjie"></span>个户清洁</a>
+          <div class="item-menu">
+            <div class="subcate">
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">面部护肤<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">礼盒</a>
+                  <a href="#" class="subcate_con_lk">美白</a>
+                  <a href="#" class="subcate_con_lk">防晒</a>
+                  <a href="#" class="subcate_con_lk">面膜</a>
+                  <a href="#" class="subcate_con_lk">洁面</a>
+                  <a href="#" class="subcate_con_lk">爽肤水</a>
+                  <a href="#" class="subcate_con_lk">精华</a>
+                  <a href="#" class="subcate_con_lk">眼霜</a>
+                  <a href="#" class="subcate_con_lk">乳液</a>
+                  <a href="#" class="subcate_con_lk">卸妆</a>
+                  <a href="#" class="subcate_con_lk">润唇膏</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">男士护肤<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">控油</a>
+                  <a href="#" class="subcate_con_lk">洁面</a>
+                  <a href="#" class="subcate_con_lk">乳液</a>
+                  <a href="#" class="subcate_con_lk">面膜</a>
+                  <a href="#" class="subcate_con_lk">爽肤水</a>
+                  <a href="#" class="subcate_con_lk">剃须</a>
+                  <a href="#" class="subcate_con_lk">精华</a>
+                  <a href="#" class="subcate_con_lk">防晒</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">洗发护发<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">洗发水</a>
+                  <a href="#" class="subcate_con_lk">护发素</a>
+                  <a href="#" class="subcate_con_lk">染发</a>
+                  <a href="#" class="subcate_con_lk">烫发</a>
+                  <a href="#" class="subcate_con_lk">假发</a>
+                  <a href="#" class="subcate_con_lk">美发工具</a>
+                  <a href="#" class="subcate_con_lk">洗护套装</a>
+                  <a href="#" class="subcate_con_lk">发膜</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">口腔护理<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">牙膏</a>
+                  <a href="#" class="subcate_con_lk">牙刷</a>
+                  <a href="#" class="subcate_con_lk">牙线</a>
+                  <a href="#" class="subcate_con_lk">漱口水</a>
+                  <a href="#" class="subcate_con_lk">牙粉</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">纸品清洗<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">抽纸</a>
+                  <a href="#" class="subcate_con_lk">卷纸</a>
+                  <a href="#" class="subcate_con_lk">湿巾</a>
+                  <a href="#" class="subcate_con_lk">厨房用纸</a>
+                  <a href="#" class="subcate_con_lk">洗衣液</a>
+                  <a href="#" class="subcate_con_lk">洗衣粉</a>
+                  <a href="#" class="subcate_con_lk">湿厕纸</a>
+                  <a href="#" class="subcate_con_lk">护理除菌</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="guessLike">
+              <h3>猜你喜欢</h3>
+              <ul class="like_list clearfix">
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="#" class="item-href"><span class="iconfont icon-qiche"></span>汽车</a>
+          <div class="item-menu">
+            <div class="subcate">
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">汽车车型<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">微型车</a>
+                  <a href="#" class="subcate_con_lk">小型车</a>
+                  <a href="#" class="subcate_con_lk">紧凑型车</a>
+                  <a href="#" class="subcate_con_lk">中型车</a>
+                  <a href="#" class="subcate_con_lk">中大型车</a>
+                  <a href="#" class="subcate_con_lk">豪华车</a>
+                  <a href="#" class="subcate_con_lk">MPV</a>
+                  <a href="#" class="subcate_con_lk">SUV</a>
+                  <a href="#" class="subcate_con_lk">跑车</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">维修保养<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">汽机油</a>
+                  <a href="#" class="subcate_con_lk">轮胎</a>
+                  <a href="#" class="subcate_con_lk">蓄电池</a>
+                  <a href="#" class="subcate_con_lk">雨刷</a>
+                  <a href="#" class="subcate_con_lk">刹车片</a>
+                  <a href="#" class="subcate_con_lk">车灯</a>
+                  <a href="#" class="subcate_con_lk">汽车玻璃</a>
+                  <a href="#" class="subcate_con_lk">减震器</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">汽车装饰<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">座垫座套</a>
+                  <a href="#" class="subcate_con_lk">方向盘套</a>
+                  <a href="#" class="subcate_con_lk">香水</a>
+                  <a href="#" class="subcate_con_lk">扶手箱</a>
+                  <a href="#" class="subcate_con_lk">挂件摆件</a>
+                  <a href="#" class="subcate_con_lk">踏板</a>
+                  <a href="#" class="subcate_con_lk">装饰灯</a>
+                  <a href="#" class="subcate_con_lk">车载支架</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">车载电器<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">行车记录仪</a>
+                  <a href="#" class="subcate_con_lk">车载充电器</a>
+                  <a href="#" class="subcate_con_lk">车机导航</a>
+                  <a href="#" class="subcate_con_lk">对讲电台</a>
+                  <a href="#" class="subcate_con_lk">汽车音响</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">美容清晰<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">洗车机</a>
+                  <a href="#" class="subcate_con_lk">洗车水枪</a>
+                  <a href="#" class="subcate_con_lk">玻璃水</a>
+                  <a href="#" class="subcate_con_lk">清洁剂</a>
+                  <a href="#" class="subcate_con_lk">车蜡</a>
+                  <a href="#" class="subcate_con_lk">汽车贴膜</a>
+                  <a href="#" class="subcate_con_lk">补漆笔</a>
+                  <a href="#" class="subcate_con_lk">洗车配件</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="guessLike">
+              <h3>猜你喜欢</h3>
+              <ul class="like_list clearfix">
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="#" class="item-href"><span class="iconfont icon-lingshi"></span>零食美食</a>
+          <div class="item-menu">
+            <div class="subcate">
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">新鲜水果<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">苹果</a>
+                  <a href="#" class="subcate_con_lk">橙子</a>
+                  <a href="#" class="subcate_con_lk">火龙果</a>
+                  <a href="#" class="subcate_con_lk">榴莲</a>
+                  <a href="#" class="subcate_con_lk">芒果</a>
+                  <a href="#" class="subcate_con_lk">椰子</a>
+                  <a href="#" class="subcate_con_lk">柚子</a>
+                  <a href="#" class="subcate_con_lk">车厘子</a>
+                  <a href="#" class="subcate_con_lk">百香果</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">海鲜水产<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">鱼类</a>
+                  <a href="#" class="subcate_con_lk">虾类</a>
+                  <a href="#" class="subcate_con_lk">蟹类</a>
+                  <a href="#" class="subcate_con_lk">海参</a>
+                  <a href="#" class="subcate_con_lk">鱿鱼</a>
+                  <a href="#" class="subcate_con_lk">三文鱼</a>
+                  <a href="#" class="subcate_con_lk">大闸蟹</a>
+                  <a href="#" class="subcate_con_lk">小龙虾</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">进口食品<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">牛奶</a>
+                  <a href="#" class="subcate_con_lk">巧克力</a>
+                  <a href="#" class="subcate_con_lk">饮料</a>
+                  <a href="#" class="subcate_con_lk">咖啡粉</a>
+                  <a href="#" class="subcate_con_lk">油</a>
+                  <a href="#" class="subcate_con_lk">饼干蛋糕</a>
+                  <a href="#" class="subcate_con_lk">冲调品</a>
+                  <a href="#" class="subcate_con_lk">方便食品</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">休闲食品<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">休闲零食</a>
+                  <a href="#" class="subcate_con_lk">膨化食品</a>
+                  <a href="#" class="subcate_con_lk">肉干</a>
+                  <a href="#" class="subcate_con_lk">蜜饯果干</a>
+                  <a href="#" class="subcate_con_lk">坚果炒货</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">饮料冲调<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">饮料</a>
+                  <a href="#" class="subcate_con_lk">牛奶酸奶</a>
+                  <a href="#" class="subcate_con_lk">咖啡奶茶</a>
+                  <a href="#" class="subcate_con_lk">蜂蜜</a>
+                  <a href="#" class="subcate_con_lk">成人奶粉</a>
+                  <a href="#" class="subcate_con_lk">绿茶</a>
+                  <a href="#" class="subcate_con_lk">养生茶</a>
+                  <a href="#" class="subcate_con_lk">花果茶</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="guessLike">
+              <h3>猜你喜欢</h3>
+              <ul class="like_list clearfix">
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="#" class="item-href"><span class="iconfont icon-leimucuzhubao"></span>钟表珠宝</a>
+          <div class="item-menu">
+            <div class="subcate">
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">珠宝首饰<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">黄金</a>
+                  <a href="#" class="subcate_con_lk">钻石</a>
+                  <a href="#" class="subcate_con_lk">翡翠玉石</a>
+                  <a href="#" class="subcate_con_lk">水晶玛瑙</a>
+                  <a href="#" class="subcate_con_lk">彩宝</a>
+                  <a href="#" class="subcate_con_lk">铂金</a>
+                  <a href="#" class="subcate_con_lk">珍珠</a>
+                  <a href="#" class="subcate_con_lk">发饰</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">奢侈品<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">箱包</a>
+                  <a href="#" class="subcate_con_lk">钱包</a>
+                  <a href="#" class="subcate_con_lk">服饰</a>
+                  <a href="#" class="subcate_con_lk">腰带</a>
+                  <a href="#" class="subcate_con_lk">饰品</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">钟表<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">欧密茄</a>
+                  <a href="#" class="subcate_con_lk">DW</a>
+                  <a href="#" class="subcate_con_lk">卡西欧</a>
+                  <a href="#" class="subcate_con_lk">天王</a>
+                  <a href="#" class="subcate_con_lk">闹钟</a>
+                  <a href="#" class="subcate_con_lk">挂钟</a>
+                  <a href="#" class="subcate_con_lk">西铁城</a>
+                  <a href="#" class="subcate_con_lk">国表</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">精选大牌<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">GUCCI</a>
+                  <a href="#" class="subcate_con_lk">施华洛世奇</a>
+                  <a href="#" class="subcate_con_lk">阿玛尼</a>
+                  <a href="#" class="subcate_con_lk">普拉达</a>
+                  <a href="#" class="subcate_con_lk">万宝龙</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="guessLike">
+              <h3>猜你喜欢</h3>
+              <ul class="like_list clearfix">
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="list-item">
+          <a href="#" class="item-href"><span class="iconfont icon-tushu"></span>图书文娱</a>
+          <div class="item-menu">
+            <div class="subcate">
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">文学<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">小说</a>
+                  <a href="#" class="subcate_con_lk">散文随笔</a>
+                  <a href="#" class="subcate_con_lk">青春文学</a>
+                  <a href="#" class="subcate_con_lk">动漫</a>
+                  <a href="#" class="subcate_con_lk">悬疑推理</a>
+                  <a href="#" class="subcate_con_lk">科幻</a>
+                  <a href="#" class="subcate_con_lk">武侠</a>
+                  <a href="#" class="subcate_con_lk">世界名著</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">艺术<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">绘画</a>
+                  <a href="#" class="subcate_con_lk">摄影</a>
+                  <a href="#" class="subcate_con_lk">音乐</a>
+                  <a href="#" class="subcate_con_lk">书法</a>
+                  <a href="#" class="subcate_con_lk">设计</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">科学技术<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">计算机与互联网</a>
+                  <a href="#" class="subcate_con_lk">科普</a>
+                  <a href="#" class="subcate_con_lk">建筑</a>
+                  <a href="#" class="subcate_con_lk">工业技术</a>
+                  <a href="#" class="subcate_con_lk">电子通讯</a>
+                  <a href="#" class="subcate_con_lk">医学</a>
+                  <a href="#" class="subcate_con_lk">科学与自然</a>
+                  <a href="#" class="subcate_con_lk">农林</a>
+                </dd>
+              </dl>
+              <dl class="subcate_item">
+                <dt class="subcate_title">
+                  <a href="#" class="subcate_link">电子书<i class="subcate_title_arrow">></i></a>
+                </dt>
+                <dd class="subcate_con clearfix">
+                  <a href="#" class="subcate_con_lk">小说</a>
+                  <a href="#" class="subcate_con_lk">文学</a>
+                  <a href="#" class="subcate_con_lk">经济管理</a>
+                  <a href="#" class="subcate_con_lk">传记</a>
+                  <a href="#" class="subcate_con_lk">社会科学</a>
+                </dd>
+              </dl>
+            </div>
+            <div class="guessLike">
+              <h3>猜你喜欢</h3>
+              <ul class="like_list clearfix">
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+                <li class="like_item">
+                  <a href="#" class="like_lk">
+                    <img src="img/good.jpg" alt="">
+                    <p>分布式无限路由器</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="banner-wrap">
+      <div class="banner">
+        <ul id="swiper">
+          <!-- <li class="swiper-item">
+            <a href="#"><img src="img/erji.jpg" alt=""></a>
+          </li>
+          <li class="swiper-item">
+            <a href="#"><img src="img/sanxing.jpg" alt=""></a>
+          </li>
+          <li class="swiper-item">
+            <a href="#"><img src="img/kongtiao.jpg" alt=""></a> -->
+          </li>
+        </ul>
+        <div class="prev swiper-arrow">
+          <</div> <div class="next swiper-arrow">>
+        </div>
+        <div id="indicators" class="indicators">
+          <!-- <div class="on indicator" data-index="0"></div>
+          <div class="indicator" data-index="1"></div>
+          <div class="indicator" data-index="2"></div> -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <div id="miaosha" class="miaosha w clearfix">
+    <div class="miaosha-time">
+      <div class="ms_tit">秒杀抢购</div>
+      <span class="iconfont icon-alarm"></span>
+      <div class="ms_desc">本场距离结束还剩</div>
+      <div class="countdown clearfix">
+        <div class="cd_item cd_hour">--</div>
+        <div class="cd_item cd_minute">--</div>
+        <div class="cd_item cd_second">--</div>
+      </div>
+    </div>
+    <div id="miaoshaList" class="miaosha-list clearfix">
+      <!-- <div class="ms-item">
+        <a href="#" class="ms-item-lk">
+          <img src="img/good.jpg" alt="" class="ms-item-img">
+          <p class="ms-item-name">分布式无线路由器</p>
+          <div class="ms-item-buy">
+            <span class="progress"><span class="progress-bar"></span></span>
+            <span class="buy-num">已抢30%</span>
+          </div>
+          <div class="ms-item-price clearfix">
+            <span class="cm-price new-price">￥549.00</span>
+            <span class="cm-price origin-price">￥690.00</span>
+          </div>
+        </a>
+      </div>
+      <div class="ms-item">
+        <a href="#" class="ms-item-lk">
+          <img src="img/good.jpg" alt="" class="ms-item-img">
+          <p class="ms-item-name">分布式无线路由器</p>
+          <div class="ms-item-buy">
+            <span class="progress"><span class="progress-bar"></span></span>
+            <span class="buy-num">已抢30%</span>
+          </div>
+          <div class="ms-item-price clearfix">
+            <span class="cm-price new-price">￥549.00</span>
+            <span class="cm-price origin-price">￥690.00</span>
+          </div>
+        </a>
+      </div>
+      <div class="ms-item">
+        <a href="#" class="ms-item-lk">
+          <img src="img/good.jpg" alt="" class="ms-item-img">
+          <p class="ms-item-name">分布式无线路由器</p>
+          <div class="ms-item-buy">
+            <span class="progress"><span class="progress-bar"></span></span>
+            <span class="buy-num">已抢30%</span>
+          </div>
+          <div class="ms-item-price clearfix">
+            <span class="cm-price new-price">￥549.00</span>
+            <span class="cm-price origin-price">￥690.00</span>
+          </div>
+        </a>
+      </div>
+      <div class="ms-item">
+        <a href="#" class="ms-item-lk">
+          <img src="img/good.jpg" alt="" class="ms-item-img">
+          <p class="ms-item-name">分布式无线路由器</p>
+          <div class="ms-item-buy">
+            <span class="progress"><span class="progress-bar"></span></span>
+            <span class="buy-num">已抢30%</span>
+          </div>
+          <div class="ms-item-price clearfix">
+            <span class="cm-price new-price">￥549.00</span>
+            <span class="cm-price origin-price">￥690.00</span>
+          </div>
+        </a>
+      </div>
+      <div class="ms-item">
+        <a href="#" class="ms-item-lk">
+          <img src="img/good.jpg" alt="" class="ms-item-img">
+          <p class="ms-item-name">分布式无线路由器</p>
+          <div class="ms-item-buy">
+            <span class="progress"><span class="progress-bar"></span></span>
+            <span class="buy-num">已抢30%</span>
+          </div>
+          <div class="ms-item-price clearfix">
+            <span class="cm-price new-price">￥549.00</span>
+            <span class="cm-price origin-price">￥690.00</span>
+          </div>
+        </a>
+      </div> -->
+    </div>
+  </div>
+
+
+  <div id="hotsale" class="layer w">
+    <div class="layer-inner">
+      <h3 class="hotSale">热卖单品</h3>
+      <ul id="hotSaleList" class="saleList clearfix">
+        <!-- <li class="bs-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+            <p class="title">分布式无线路由器11111111111111111111111111111111111111111</p>
+            <div class="line-2 clearfix">
+              <span class="comment">评论<em>8888</em></span>
+              <span class="collect">收藏<em>8888</em></span>
+            </div>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="price-through">￥2400</span>
+              <span class="sell">月销1000笔</span>
+            </div>
+          </a>
+        </li>
+        <li class="bs-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+            <p class="title">分布式无线路由器11111111111111111111111111111111111111111</p>
+            <div class="line-2 clearfix">
+              <span class="comment">评论<em>8888</em></span>
+              <span class="collect">收藏<em>8888</em></span>
+            </div>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="price-through">￥2400</span>
+              <span class="sell">月销1000笔</span>
+            </div>
+          </a>
+        </li>
+        <li class="bs-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+            <p class="title">分布式无线路由器11111111111111111111111111111111111111111</p>
+            <div class="line-2 clearfix">
+              <span class="comment">评论<em>8888</em></span>
+              <span class="collect">收藏<em>8888</em></span>
+            </div>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="price-through">￥2400</span>
+              <span class="sell">月销1000笔</span>
+            </div>
+          </a>
+        </li>
+        <li class="bs-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+            <p class="title">分布式无线路由器11111111111111111111111111111111111111111</p>
+            <div class="line-2 clearfix">
+              <span class="comment">评论<em>8888</em></span>
+              <span class="collect">收藏<em>8888</em></span>
+            </div>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="price-through">￥2400</span>
+              <span class="sell">月销1000笔</span>
+            </div>
+          </a>
+        </li>
+        <li class="bs-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+            <p class="title">分布式无线路由器11111111111111111111111111111111111111111</p>
+            <div class="line-2 clearfix">
+              <span class="comment">评论<em>8888</em></span>
+              <span class="collect">收藏<em>8888</em></span>
+            </div>
+            <div class="line-3">
+              <span class="strong">1100</span>
+              <span class="price-through">￥2400</span>
+              <span class="sell">月销1000笔</span>
+            </div>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="guesslike" class="layer w">
+    <div class="layer-inner">
+      <h3 class="likeSale">猜你喜欢</h3>
+      <ul id="gl" class="saleList clearfix">
+        <!-- <li class="like-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+          </a>
+          <p class="title">分布式无线路由器</p>
+          <div class="line-3">
+            <span class="strong">1100</span>
+            <span class="sell">月销3000笔</span>
+          </div>
+          <a href="" class="item-more">发现更多相似的宝贝</a>
+        </li>
+        <li class="like-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+          </a>
+          <p class="title">分布式无线路由器</p>
+          <div class="line-3">
+            <span class="strong">1100</span>
+            <span class="sell">月销3000笔</span>
+          </div>
+          <a href="" class="item-more">发现更多相似的宝贝</a>
+        </li>
+        <li class="like-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+          </a>
+          <p class="title">分布式无线路由器</p>
+          <div class="line-3">
+            <span class="strong">1100</span>
+            <span class="sell">月销3000笔</span>
+          </div>
+          <a href="" class="item-more">发现更多相似的宝贝</a>
+        </li>
+        <li class="like-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+          </a>
+          <p class="title">分布式无线路由器</p>
+          <div class="line-3">
+            <span class="strong">1100</span>
+            <span class="sell">月销3000笔</span>
+          </div>
+          <a href="" class="item-more">发现更多相似的宝贝</a>
+        </li>
+        <li class="like-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+          </a>
+          <p class="title">分布式无线路由器</p>
+          <div class="line-3">
+            <span class="strong">1100</span>
+            <span class="sell">月销3000笔</span>
+          </div>
+          <a href="" class="item-more">发现更多相似的宝贝</a>
+        </li>
+        <li class="like-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+          </a>
+          <p class="title">分布式无线路由器</p>
+          <div class="line-3">
+            <span class="strong">1100</span>
+            <span class="sell">月销3000笔</span>
+          </div>
+          <a href="" class="item-more">发现更多相似的宝贝</a>
+        </li>
+        <li class="like-item item">
+          <a href="">
+            <img src="img/good.jpg" alt="" class="item-img">
+          </a>
+          <p class="title">分布式无线路由器</p>
+          <div class="line-3">
+            <span class="strong">1100</span>
+            <span class="sell">月销3000笔</span>
+          </div>
+          <a href="" class="item-more">发现更多相似的宝贝</a>
+        </li> -->
+
+      </ul>
+      <p id="num" style="display: none">-1</p>
+      <div id="loadMore" class="loadMore"><span>加载更多</span></div>
+    </div>
+  </div>
+
+
+  <div class="footer">
+    <ul class="footer_container w">
+      <div class="footer_social">
+        <a href="">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAmVBMVEUAAADrXVzqXVzsXVzrXVzrXVzqXFvrXVzrXFzrXFzrXFvsXVztXV3qXVzqXVzrXVzrXVzsXVzqXVzrXVzrXVzrXFvrXVztXl3sXV3sXFvqXFvrXVzrXVzrXVzrXV3rXVzsXl3sXl3sXFvsXVztW1vtXFvrXVzqXFzrXVzqXFvsXVzrXFvtXFvuW1vsXFzsXl3rXV3sWlnqXVwFstRJAAAAMnRSTlMAyfJk6OPTqFxTQTsx+M+bjHf12bCfhE5GFN/BvLeUfVZJLBoMBezEiW1fNyUdCnFrAybGT4MAAAEmSURBVCjPbZLZcoMwDEUvxmwhrAkEsidAs7RJW/3/x9VgA4XxeREzZyxZF2PgM3EMxmzntMCczYEGDHeiyjVNuH2NbvlBczaDIw2FdO+UdMjOe9KyhWBBE5zkbskvE4AxlZ6/REwtvPl3GxY9dqLs+EFZD6ferUvg2nareARqieAol3URHs4LO/IChF1SsNW5MZFgn2FFAgspyYoqDrmR+0KSIzdgCLr6hEfkHEWMD5T9/VPZgH5fFEDuVQ6bc8j/AZNcPzuLQhUKJUPkXb3W9H1i7cnjmGcGXwVZ8PvlbFMO5KRwoYZaF9/0TLdBsetdWgObfkKcPN04pIEEApu0sAaCl1766uXpnAnFRe8U19lca/qwf1aj4skbM7zjbcuYZURuDcUf0IRfo5ZkTFQAAAAASUVORK5CYII="
+            alt="官方微博">
+        </a>
+        <a href="">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAA6lBMVEUAAABQt3RIvHRQtnVQtnRRtXRPtnRQtnRNuHFPuHVPt3RQtnRPt3NQtnRRtnRPt3RPtnRQtnRPuHVNuHNQtnJKvXJQtnRQtnRRtnNPtnRNvW9OuHZYtnJQtnRQuXJOt3ZNuXNPtnRWs3NPtnNPtnVPuHVOuHZLumpZrYRPt3ROt3NcrHFPuHNOtXJOuXFSs3hLu3ZStXxWsHQ+xXVKu21QuXJMuHJQtnNQt3VOt2k4y3dQt3RQtXUz0E5YrG1eqogu0kgx0ncz0XhDwWJUtXlQtnRRtnRQtnVTtHRRtnVWsXVbq3NTtHdcqoV/VWtCAAAARXRSTlMAOAPg8u/Y0HEM+va1sZV2Zl1PQBoG3cy+p1UqHuXMx8TDv6ugm4JeXVpFNTAlFOrg1LOxlYmHhXt4YGBTUUxLRkM0LhBCU+vDAAABTUlEQVQoz22S5ZrCMBBFb4WiVVp8cZd1d0sF2Pd/naVTo8D5k3ZO5pvvJkEMp9arGTE7eCzjEKPGYqp6Spkltodjd5uJW4gsjeu+R+57ww6x3S8Q+YLNjnA2LZJ9l51C8t083FrP6ZpS2evVAWRpRm0F4iEZccaDI9cBOBMom9ASa2BMsomlM8CvlwWyTiQVyP6yq+VzHPiZqmmKEMke6FNGwM903tpN6q9JVlDwlwxP7lNFwI1LVRRpZo5OY2qhfYf6NfiMt6sWITGyBg+sOOCVQ2MGjCgLZEYUAFjJXQz9QFWMg1zyiyDVRpE7p2FDlANJf24jdG3KqgMSWcJm96YvVSqJecAIJVmv0CtVSiU7TnC1ZSewg+wtl5267AWIt7/jvvUzQj6Yl3bueoKYpWQ7++4y/bBzAtuG7d7Fk4U0VuO2K4ii0FEmeYT8AzRaeyGGpXtyAAAAAElFTkSuQmCC"
+            alt="官方公众号">
+        </a>
+        <a href="">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAz1BMVEUAAAAvpd4wpd0wpd4tpuAxqt4wpd4vpd4wqN0ppuImquUwpN0wpd4vpd8wpd0up98wpt4wpd0vpt0tpN8vqd4speMvpd0opeI0pdgvpt4vpd0rpOEwpd0xpd0wpd0sqeAqquIurOEtqN8upd4nqOUpqOIupOgsouAvoNsqp+E1qdovpd4wpd4vpd0xo90wpdkun9wvpt0vpd4imukgwewyouEemOwdme0to9wmqOQ5stwwpd0xpdwzpdsxpNwwpdwvpN03qtczp90yotw4mNeIn8/UAAAAO3RSTlMA8t/YTzfuz1wMBujiy8rEsKGSgHlCPSj++vbyvLWrlXBhVkUxGxTg1MPBp6aZmI6Jd2lgUUtDNC8hH6zWnXoAAAEaSURBVCjPbZLneoJQDIY/tgqyRKh71u69e8DR9v6vqQ+eEHq07y+SN0DyJGCsh2vf1pxx0sUh5lAwfkNRpyPxl+IiA2Npa6HaE7Nyb7tcHJB/vUrX7LOr2e4+UXJJTmVjlG6x5YRxEwe1LXt2OIzL2kcOPcDiYIQ999y5iQ7LdylbPbLFBCEXriDRKbMO4FX/b4O4E4SOXjV2XMmu2MiUDY1etFeocGjwPgySCTsewEVITxlqPOqCR7kaf9AoYeTKVISU17SkPQxyarEBGCQ7IDIpi0ETMKmwbabzoTNLFxF9aVpWnhfiP2x5QCyVZVvY8/xzfCbFE4gXcXRgMzBLQ3Vn6mFPdfFdrcpNWlBpzSeBrmm6f9togvgFmINuYDwpQKQAAAAASUVORK5CYII="
+            alt="客服QQ">
+        </a>
+      </div>
+
+      <ul class="footer_link">
+        <li><a>关于我们</a></li>
+        <li><a>联系我们</a></li>
+        <li><a>帮助中心</a></li>
+        <li><a>加入我们</a></li>
+        <li><a>讲师合作</a></li>
+        <li><a>友情链接</a></li>
+      </ul>
+
+      <div class="footer_copyright">Copyright © 2019-2020 www.wenchuantong.com,All Rights Reserved <br><a href="http://www.beian.miit.gov.cn">蜀ICP备18015863号</a></div>
+    </ul>
+  </div>
+
+
+  <div class="tool">
+    <a href="#miaosha" class="on tool-item1">秒杀<br>抢购</a>
+    <a href="#hotsale" class="tool-item2">热卖<br>单品</a>
+    <a href="#guesslike" class="tool-item3">猜你<br>喜欢</a>
+    <a id="goTop" class="tool-item4" onclick="goTop()"><span class="top-arrow"></span>顶部</a>
+    <a class="tool-item5">反馈</a>
+  </div>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/ajax.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
